@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background-image: url('bg2.webp'); 
+  background-size: cover; 
+  background-position: center; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+  animation: fadeIn 1s ease-in-out; 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+h2 {
+  color: #e8edf1;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-transform: uppercase; 
+  letter-spacing: 1px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: bold; /* Fixed the comment syntax */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  background: #f9f9f9; 
+}
+
+.input-group input:focus {
+  border-color: #1976d2;
+  outline: none;
+  background: #fff; 
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px; 
+  border: none;
+  border-radius: 6px;
+  background: #1976d2;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold; 
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s; 
+}
+
+.login-button:hover {
+  background: #155a9d;
+  transform: scale(1.05); 
+}

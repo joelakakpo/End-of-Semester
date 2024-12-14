@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('bg2.webp'); /* Replace with the actual path or URL of the image */
+  background-size: cover; /* Ensures the background image covers the entire page */
+  background-position: center; /* Centers the background image */
+  color: #0c0c0c;
+}
+
+
+.container {
+  max-width: 700px; /* Reduce width for better alignment */
+  margin: 0 auto;
+  padding: 10px; /* Reduce padding */
+}
+
+h2 {
+  color: #111110; /* Change the color of the header font to a golden color */
+  font-size: 2rem; /* Reduced font size */
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #6a1b9a, #1976D2); /* Gradient background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  width: 100%; /* Full width */
+  padding: 15px 0; /* Reduced padding */
+  margin: 0 auto;
+}
+
+/* Menu Styles */
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Decreased the min width */
+  gap: 15px; /* Reduced gap */
+  padding: 15px; /* Reduced padding */
+}
+
+.menu-item {
+  background-color: white;
+  border-radius: 8px; /* Reduced border radius */
+  padding: 1rem; /* Reduced padding */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  min-height: 350px; /* Reduced min-height */
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem; /* Reduced margin */
+}
+
+.menu-item-name {
+  font-size: 1.3rem; /* Reduced font size */
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.menu-item-price {
+  color: #1976D2;
+  font-weight: 700;
+}
+
+.menu-item-category {
+  display: inline-block;
+  padding: 4px 6px;
+  background-color: #e3f2fd;
+  color: #1976D2;
+  border-radius: 4px;
+  font-size: 0.9rem; /* Reduced font size */
+  margin-top: 6px;
+}
+
+.menu-item-nutrition {
+  margin-top: 6px;
+  font-size: 0.9rem; /* Reduced font size */
+  color: #757575;
+  text-align: left;
+}
+
+/* Image Styles */
+.menu-item-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Reduced border radius */
+  margin-bottom: 0.8rem; /* Reduced margin */
+  object-fit: cover; /* Ensures the image covers its container */
+}
+
+/* Customization and Button Layout */
+.customization-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: auto;
+  width: 95%;
+}
+
+.customization-input {
+  width: 95%;
+  padding: 8px; /* Reduced padding */
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  margin: 6px 0; /* Reduced margin */
+  font-size: 0.9rem; /* Reduced font size */
+  transition: border-color 0.2s ease;
+}
+
+.customization-input:focus {
+  outline: none;
+  border-color: #1976D2;
+}
+
+.customization-input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+/* Button Styles */
+.cart-button {
+  width: 100%;
+  padding: 10px; /* Reduced padding */
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  background-color: #1976D2;
+  color: white;
+  margin-top: 8px; /* Reduced margin */
+}
+
+.cart-button:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cart-button:disabled {
+  background-color: #4CAF50; /* Green background for added items */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #1976D2;
+  font-weight: bold;
+  margin: 0 10px; /* Reduced margin */
+  font-size: 1rem; /* Reduced font size */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1565C0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px; /* Reduced padding */
+  }
+
+  .menu-item {
+    min-height: auto;
+    padding: 0.8rem; /* Reduced padding */
+  }
+
+  .menu-list {
+    grid-template-columns: 1fr 1fr; /* Two columns */
+  }
+
+  .menu-item-name {
+    font-size: 1.1rem; /* Smaller font size */
+  }
+
+  .menu-item-price {
+    font-size: 1rem; /* Smaller price */
+  }
+
+  .customization-input {
+    font-size: 0.8rem; /* Smaller input font */
+  }
+
+  .cart-button {
+    font-size: 0.9rem; /* Adjusted button font size */
+  }
+}
