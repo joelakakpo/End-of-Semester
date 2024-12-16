@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const OrderTracking = ({ cartItems, setCartItems, handlePlaceOrder }) => {
+const OrderReview = ({ cartItems, setCartItems, handlePlaceOrder }) => {
   const [orderStatus, setOrderStatus] = useState(""); 
   const [loyaltyMessage, setLoyaltyMessage] = useState("");
   const [userPoints, setUserPoints] = useState(10); 
@@ -171,4 +171,4 @@ const backToMenuButtonStyle = {
   transition: "background-color 0.3s, transform 0.3s",
 };
 
-export default OrderTracking;
+export default OrderReview;
