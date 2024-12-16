@@ -6,14 +6,13 @@ import Menu from "./components/Menu";
 import Cart from "./components/Cart";
 import OrderReview from "./components/OrderReview";
 import OrderTracking from "./components/OrderTracking";
-import Profile from "./components/Profile"; // Corrected the import statement
+import Profile from "./components/Profile";
 import Login from "./components/Login";
 import Register from "./components/Register";
-import "./App.css"; // Ensure you import your CSS file
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]); // State to store cart items
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
 
   // Add item to the cart
   const handleAddToCart = (item) => {
@@ -84,7 +83,7 @@ const App = () => {
                 }
               />
               <Route path="/ordertracking" element={<OrderTracking />} />
-              <Route path="/profile" element={<Profile />} /> {/* Profile Route */}
+              <Route path="/profile" element={<Profile />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </>
           )}

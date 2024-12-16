@@ -71,7 +71,7 @@ const Profile = () => {
   }
 
   return (
-    <div className="profile-container">
+    <div>
       <h2>User Profile</h2>
       {user ? (
         <div>
@@ -95,7 +95,7 @@ const Profile = () => {
           </p>
         </div>
       ) : (
-        <p>Loading profile...</p>
+        <p>Loading profile...</p> // Show loading only if profile data is not fetched yet
       )}
 
       <h3>Update Profile</h3>
