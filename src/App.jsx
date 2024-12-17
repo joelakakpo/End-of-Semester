@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Cart from "./components/Cart";
-import OrderReview from "./components/OrderReview";
+import OrderReview from "./components/Orderreview";
 import OrderTracking from "./components/OrderTracking";
 import Profile from "./components/Profile";
 import Login from "./components/Login";
