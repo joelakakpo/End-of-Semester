@@ -8,7 +8,7 @@ import OrderReview from "./components/Orderreview";
 import OrderTracking from "./components/Ordertracking"
 import Profile from "./components/profile"
 import Login from "./components/login"
-import Register from "./components/Register"
+import Register from "./components/register"
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]); // State to store cart items
