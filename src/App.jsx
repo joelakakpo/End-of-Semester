@@ -5,10 +5,10 @@ import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Cart from "./components/Cart";
 import OrderReview from "./components/Orderreview";
-import OrderTracking from "./components/OrderTracking";
-import Profile from "./components/Profile";
-import Login from "./components/Login";
-import Register from "./components/Register";
+import OrderTracking from "./components/Ordertracking"
+import Profile from "./components/profile"
+import Login from "./components/login"
+import Register from "./components/Register"
 
 const App = () => {
   const [cartItems, setCartItems] = useState([]); // State to store cart items
