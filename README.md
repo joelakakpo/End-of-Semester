@@ -13,6 +13,7 @@ To test the system, sample login credentials have been provided:
 
 •	Email: john@example.com
 •	Password: password123
+You can only register once you are not logged in
 
 These credentials allow users to experience the platform’s key features firsthand, such as browsing the menu, placing an order, and tracking their orders.
 The Canteen Ordering System boasts a comprehensive set of features that cater to the needs of both customers and administrators. Key functionalities include:
